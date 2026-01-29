@@ -94,12 +94,16 @@ public class ProductKitPage extends  BasePage{
 	@FindBy(xpath = "(//div[contains(@role,'menuitem')])[3]")
 	private WebElement deleteButton;
 	
-	@FindBy(xpath = "//button[text()='OK']")
+	@FindBy(xpath = "//div//button[text()='OK']")
 	private WebElement confirmDeleteButton;
 	
 	@FindBy(xpath="//div[text()='Product kit deleted successfully.']")
 	private WebElement productKitDeletedMessage;
 	
+	
+	
+	
+
 	
 
 	
