@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="stockmanagement.StocksAllotmentTest">
+      <class name="schoolPOS.PosExchangeTest">
         <methods>
-          <include name="verifyingAddingRecievedQty"/>
+          <include name="openPosOrderPage"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- stockmanagement.StocksAllotmentTest -->
+      </class> <!-- schoolPOS.PosExchangeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

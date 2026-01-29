@@ -47,6 +47,36 @@ public class SidePage extends BasePage{
 	@FindBy(xpath="(//button[text()='Stocks Allotment'])[1]")
 	private WebElement stocksAllotmentbtn;
 	
+	@FindBy(xpath="//span[text()='School POS']")
+	private WebElement schoolPOSbtn;
+	
+	@FindBy(xpath="(//button[text()='Stock Allotment'])[1]")
+	private WebElement stockAllotmentBtn;
+	
+	@FindBy(xpath="(//button[text()='Returned Stock'])[1]")
+	private WebElement returnedStock;
+	
+	@FindBy(xpath="(//button[text()='Pos Orders'])[1]")
+	private WebElement posOrdersBtn;
+	
+	@FindBy(xpath="(//button[text()='Pos Sale'])[1]")
+	private WebElement posSaleBtn;
+	
+	@FindBy(xpath="(//button[text()='Pos Exchange'])[1]")
+	private WebElement posExchangeBtn;
+	
+	@FindBy(xpath="(//button[text()='Pos Return'])[1]")
+	private WebElement posReturnBtn;
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
 	
 	
 	
@@ -102,6 +132,43 @@ public class SidePage extends BasePage{
 	{
 		stockManagementBtn.click();
 		stocksAllotmentbtn.click();
+	}
+	
+	public void openStockAllotment()
+	{
+		schoolPOSbtn.click();
+		stockAllotmentBtn.click();
+	}
+	
+	public void openReturnedStock()
+	{
+		schoolPOSbtn.click();
+		returnedStock.click();
+	}
+	
+	public void openPosOrders()
+	{
+		schoolPOSbtn.click();
+		posOrdersBtn.click();
+	}
+	
+	public void openPosSale()
+	{
+		schoolPOSbtn.click();
+		posSaleBtn.click();
+	}
+	
+	public void openPosExchange()
+	{
+		schoolPOSbtn.click();
+		posExchangeBtn.click();
+	}
+	
+	public void openPosReturn()
+	{
+		schoolPOSbtn.click();
+		posReturnBtn.click();
+		
 	}
 	
 	

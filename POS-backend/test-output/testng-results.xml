@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-29T11:37:21 IST" name="Default suite" finished-at="2026-01-29T11:37:26 IST" duration-ms="5689">
+  <suite started-at="2026-01-29T18:37:39 IST" name="Default suite" finished-at="2026-01-29T18:37:44 IST" duration-ms="4870">
     <groups>
     </groups>
-    <test started-at="2026-01-29T11:37:21 IST" name="Default test" finished-at="2026-01-29T11:37:26 IST" duration-ms="5689">
-      <class name="stockmanagement.StocksAllotmentTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:stockmanagement.StocksAllotmentTest@2a798d51]" started-at="2026-01-29T11:37:21 IST" name="setup" finished-at="2026-01-29T11:37:24 IST" duration-ms="2937" status="PASS">
+    <test started-at="2026-01-29T18:37:39 IST" name="Default test" finished-at="2026-01-29T18:37:44 IST" duration-ms="4870">
+      <class name="schoolPOS.PosExchangeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:schoolPOS.PosExchangeTest@6b81ce95]" started-at="2026-01-29T18:37:39 IST" name="setup" finished-at="2026-01-29T18:37:42 IST" duration-ms="3061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkTheFilterFunction()[pri:1, instance:stockmanagement.StocksAllotmentTest@2a798d51]" started-at="2026-01-29T11:37:24 IST" name="checkTheFilterFunction" finished-at="2026-01-29T11:37:25 IST" duration-ms="1243" status="PASS">
+        <test-method signature="openPosOrderPage()[pri:1, instance:schoolPOS.PosExchangeTest@6b81ce95]" started-at="2026-01-29T18:37:42 IST" name="openPosOrderPage" finished-at="2026-01-29T18:37:43 IST" duration-ms="961" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTheFilterFunction -->
-        <test-method signature="checkTheSearchFunction()[pri:2, instance:stockmanagement.StocksAllotmentTest@2a798d51]" started-at="2026-01-29T11:37:25 IST" name="checkTheSearchFunction" finished-at="2026-01-29T11:37:25 IST" duration-ms="345" status="PASS">
+        </test-method> <!-- openPosOrderPage -->
+        <test-method signature="viewPosExchangeId()[pri:2, instance:schoolPOS.PosExchangeTest@6b81ce95]" started-at="2026-01-29T18:37:43 IST" name="viewPosExchangeId" finished-at="2026-01-29T18:37:44 IST" duration-ms="568" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTheSearchFunction -->
-        <test-method signature="verifyingAddingRecievedQty()[pri:3, instance:stockmanagement.StocksAllotmentTest@2a798d51]" started-at="2026-01-29T11:37:25 IST" name="verifyingAddingRecievedQty" finished-at="2026-01-29T11:37:26 IST" duration-ms="871" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingAddingRecievedQty -->
-      </class> <!-- stockmanagement.StocksAllotmentTest -->
+        </test-method> <!-- viewPosExchangeId -->
+      </class> <!-- schoolPOS.PosExchangeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
