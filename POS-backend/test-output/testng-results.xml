@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-29T18:37:39 IST" name="Default suite" finished-at="2026-01-29T18:37:44 IST" duration-ms="4870">
+  <suite started-at="2026-01-30T17:13:40 IST" name="Default suite" finished-at="2026-01-30T17:13:45 IST" duration-ms="4693">
     <groups>
     </groups>
-    <test started-at="2026-01-29T18:37:39 IST" name="Default test" finished-at="2026-01-29T18:37:44 IST" duration-ms="4870">
-      <class name="schoolPOS.PosExchangeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:schoolPOS.PosExchangeTest@6b81ce95]" started-at="2026-01-29T18:37:39 IST" name="setup" finished-at="2026-01-29T18:37:42 IST" duration-ms="3061" status="PASS">
+    <test started-at="2026-01-30T17:13:40 IST" name="Default test" finished-at="2026-01-30T17:13:45 IST" duration-ms="4693">
+      <class name="settings.CustomerSupportTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:settings.CustomerSupportTest@2a798d51]" started-at="2026-01-30T17:13:40 IST" name="setup" finished-at="2026-01-30T17:13:44 IST" duration-ms="3029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openPosOrderPage()[pri:1, instance:schoolPOS.PosExchangeTest@6b81ce95]" started-at="2026-01-29T18:37:42 IST" name="openPosOrderPage" finished-at="2026-01-29T18:37:43 IST" duration-ms="961" status="PASS">
+        <test-method signature="openCustomerSupportPage()[pri:1, instance:settings.CustomerSupportTest@2a798d51]" started-at="2026-01-30T17:13:44 IST" name="openCustomerSupportPage" finished-at="2026-01-30T17:13:44 IST" duration-ms="599" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openPosOrderPage -->
-        <test-method signature="viewPosExchangeId()[pri:2, instance:schoolPOS.PosExchangeTest@6b81ce95]" started-at="2026-01-29T18:37:43 IST" name="viewPosExchangeId" finished-at="2026-01-29T18:37:44 IST" duration-ms="568" status="PASS">
+        </test-method> <!-- openCustomerSupportPage -->
+        <test-method signature="checkTheSearchFunctonality()[pri:2, instance:settings.CustomerSupportTest@2a798d51]" started-at="2026-01-30T17:13:44 IST" name="checkTheSearchFunctonality" finished-at="2026-01-30T17:13:44 IST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewPosExchangeId -->
-      </class> <!-- schoolPOS.PosExchangeTest -->
+        </test-method> <!-- checkTheSearchFunctonality -->
+        <test-method signature="checkTheChatFunctonality()[pri:3, instance:settings.CustomerSupportTest@2a798d51]" started-at="2026-01-30T17:13:44 IST" name="checkTheChatFunctonality" finished-at="2026-01-30T17:13:45 IST" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheChatFunctonality -->
+      </class> <!-- settings.CustomerSupportTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

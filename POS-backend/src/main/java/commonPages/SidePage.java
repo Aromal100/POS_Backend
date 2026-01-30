@@ -68,16 +68,17 @@ public class SidePage extends BasePage{
 	@FindBy(xpath="(//button[text()='Pos Return'])[1]")
 	private WebElement posReturnBtn;
 	
+	@FindBy(xpath="(//button[text()='Order Settings'])[1]")
+	private WebElement orderSettingsBtn;	
 	
+	@FindBy(xpath="(//button[text()='Email Settings'])[1]")
+	private WebElement emailSettingsBtn;	
 	
+	@FindBy(xpath="(//button[text()='Delivery Partner'])[1]")
+	private WebElement deliveryPartnerBtn;
 	
-
-	
-	
-	
-	
-	
-	
+	@FindBy(xpath="//button//span[text()='Customer Support']")
+	private WebElement customerSupportBtn;
 	
 	
 	
@@ -169,6 +170,29 @@ public class SidePage extends BasePage{
 		schoolPOSbtn.click();
 		posReturnBtn.click();
 		
+	}
+	
+	public void openOrderSettings()
+	{
+		settingsBtn.click();
+		orderSettingsBtn.click();
+	}
+	
+	public void openEmailSettings()
+	{
+		settingsBtn.click();
+		emailSettingsBtn.click();
+	}
+	
+	public void openDeliveryPartner()
+	{
+		settingsBtn.click();
+		deliveryPartnerBtn.click();
+	}
+	
+	public void openCustomerSupport()
+	{
+		customerSupportBtn.click();
 	}
 	
 	

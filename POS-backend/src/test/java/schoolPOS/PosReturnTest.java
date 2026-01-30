@@ -13,7 +13,7 @@ import commonPages.SidePage;
 @Listeners(ExtentTestListener.class)
 public class PosReturnTest extends BaseTest{
 	
-	@Test
+	@Test(priority = 1)
 	public void openPosReturnPage()
 	{
 		ExtentTest test= ExtentTestListener.getTest();
@@ -21,11 +21,11 @@ public class PosReturnTest extends BaseTest{
 		try
 		{
 		  test.info("Navigating the POS Return page");
-		  sp.openPosExchange();
+		  sp.openPosReturn();
 		  String url=driver.getCurrentUrl();
-		  Assert.assertTrue(url.contains("posorders"), 
-					"POS Exchange page did not open. URL: " + url);
-		  test.pass("POS Exchange page opened successfully");
+		  Assert.assertTrue(url.contains("posreturn"), 
+					"POS Return page did not open. URL: " + url);
+		  test.pass("POS Return page opened successfully");
 		}
 		catch(Exception e)
 		{
@@ -35,18 +35,18 @@ public class PosReturnTest extends BaseTest{
 	}
 	
 	@Test(priority = 2)
-	public void viewPosExcahngeId()
+	public void viewPosReturnId()
 	{
 		ExtentTest test= ExtentTestListener.getTest();
 		SidePage sp= new SidePage(driver);
-		PosExchangePage pe= new PosExchangePage(driver);
+		PosReturnPage pr=new PosReturnPage(driver);
 		try
 		{
-		  test.info("Navigating the POS Exchange page");
-		  sp.openPosExchange();
+		  test.info("Navigating the POS Return page");
+		  sp.openPosReturn();
 		  test.info("Check the view function of the POS order ID ");
-		  pe.viewFunction();
-		  test.pass("POS order id view function is working successfully");
+		  pr.viewFunction();
+		  test.pass("POS Return order id view function is working successfully");
 		}
 		catch(Exception e)
 		{

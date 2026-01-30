@@ -48,7 +48,7 @@ public class PosExchangeTest extends BaseTest{
 		  //sp.openPosExchange();
 		  test.info("Check the view function of the POS order ID ");
 		  pe.viewFunction();
-		  test.pass("POS order id view function is working successfully");
+		  test.pass("POS Exchange order id view function is working successfully");
 		}
 		catch(Exception e)
 		{
