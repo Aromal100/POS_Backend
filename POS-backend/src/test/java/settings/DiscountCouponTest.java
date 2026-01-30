@@ -14,7 +14,7 @@ import commonPages.SidePage;
 @Listeners(ExtentTestListener.class)
 public class DiscountCouponTest extends BaseTest{
 	
-	@Test(priority = 1)
+	@Test(priority = 1,description = "Verify the Filter Functionality of the Discount Coupon")
 	public void verifyFilterFunctionality()
 	{
 		ExtentTest test= ExtentTestListener.getTest();
@@ -36,7 +36,7 @@ public class DiscountCouponTest extends BaseTest{
 	}
 	
 	
-	@Test(priority = 2)
+	@Test(priority = 2,description = "Verify Add Discount Coupon Functionality")
 	public void verifyAddDiscountCouponFunction()
 	{
 		ExtentTest test= ExtentTestListener.getTest();
@@ -66,7 +66,7 @@ public class DiscountCouponTest extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3,description = "Verify Search Function Of Discount Coupon")
 	public void verifyTheSearchBarFunction()
 	{
 		ExtentTest test= ExtentTestListener.getTest();

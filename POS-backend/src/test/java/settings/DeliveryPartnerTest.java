@@ -15,7 +15,7 @@ import commonPages.SidePage;
 @Listeners(ExtentTestListener.class)
 public class DeliveryPartnerTest extends BaseTest{
 	
-	@Test(priority = 1)
+	@Test(priority = 1, description = "Verify Delivery Partner Page Navigation")
 	public void openDelveryPartnerPage()
 	{
 		ExtentTest test=ExtentTestListener.getTest();
@@ -35,7 +35,7 @@ public class DeliveryPartnerTest extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, description = "Verify Search Functionality On Delivery Partner Page")
 	public void verifyTheSearchFunctionality()
 	{
 		ExtentTest test=ExtentTestListener.getTest();
@@ -56,7 +56,7 @@ public class DeliveryPartnerTest extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3, description = "Verify View Functionality On Delivery Partner Page" )
 	public void viewDeliveryPartner()
 	{
 		ExtentTest test=ExtentTestListener.getTest();

@@ -1,29 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-30T17:13:40 IST" name="Default suite" finished-at="2026-01-30T17:13:45 IST" duration-ms="4693">
+  <suite started-at="2026-01-30T18:36:13 IST" name="Default suite" finished-at="2026-01-30T18:36:31 IST" duration-ms="17532">
     <groups>
     </groups>
-    <test started-at="2026-01-30T17:13:40 IST" name="Default test" finished-at="2026-01-30T17:13:45 IST" duration-ms="4693">
-      <class name="settings.CustomerSupportTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:settings.CustomerSupportTest@2a798d51]" started-at="2026-01-30T17:13:40 IST" name="setup" finished-at="2026-01-30T17:13:44 IST" duration-ms="3029" status="PASS">
+    <test started-at="2026-01-30T18:36:13 IST" name="Default test" finished-at="2026-01-30T18:36:31 IST" duration-ms="17532">
+      <class name="settings.DiscountCouponTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:settings.DiscountCouponTest@12468a38]" started-at="2026-01-30T18:36:13 IST" name="setup" finished-at="2026-01-30T18:36:17 IST" duration-ms="3222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openCustomerSupportPage()[pri:1, instance:settings.CustomerSupportTest@2a798d51]" started-at="2026-01-30T17:13:44 IST" name="openCustomerSupportPage" finished-at="2026-01-30T17:13:44 IST" duration-ms="599" status="PASS">
+        <test-method signature="verifyFilterFunctionality()[pri:1, instance:settings.DiscountCouponTest@12468a38]" started-at="2026-01-30T18:36:17 IST" name="verifyFilterFunctionality" description="Verify the Filter Functionality of the Discount Coupon" finished-at="2026-01-30T18:36:18 IST" duration-ms="1300" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openCustomerSupportPage -->
-        <test-method signature="checkTheSearchFunctonality()[pri:2, instance:settings.CustomerSupportTest@2a798d51]" started-at="2026-01-30T17:13:44 IST" name="checkTheSearchFunctonality" finished-at="2026-01-30T17:13:44 IST" duration-ms="307" status="PASS">
+        </test-method> <!-- verifyFilterFunctionality -->
+        <test-method signature="verifyAddDiscountCouponFunction()[pri:2, instance:settings.DiscountCouponTest@12468a38]" started-at="2026-01-30T18:36:18 IST" name="verifyAddDiscountCouponFunction" description="Verify Add Discount Coupon Functionality" finished-at="2026-01-30T18:36:29 IST" duration-ms="11202" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Discount coupon added successfully.']' (tried for 3 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Discount coupon added successfully.']' (tried for 3 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utilities.waitHelper.visibilityOf(waitHelper.java:29)
+at settings.DiscountCouponPage.getCouponCreatedMessage(DiscountCouponPage.java:104)
+at settings.DiscountCouponTest.verifyAddDiscountCouponFunction(DiscountCouponTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Discount coupon added successfully.']"}
+  (Session info: chrome=143.0.7499.192)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-139-generic', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33aa270996d0d49b2ae266eacdd0d5d2, findElement {value=//div[text()='Discount coupon added successfully.'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.192, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41697}, goog:processID: 30824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41697/devtoo..., se:cdpVersion: 143.0.7499.192, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33aa270996d0d49b2ae266eacdd0d5d2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTheSearchFunctonality -->
-        <test-method signature="checkTheChatFunctonality()[pri:3, instance:settings.CustomerSupportTest@2a798d51]" started-at="2026-01-30T17:13:44 IST" name="checkTheChatFunctonality" finished-at="2026-01-30T17:13:45 IST" duration-ms="424" status="PASS">
+        </test-method> <!-- verifyAddDiscountCouponFunction -->
+        <test-method signature="verifyTheSearchBarFunction()[pri:3, instance:settings.DiscountCouponTest@12468a38]" started-at="2026-01-30T18:36:29 IST" name="verifyTheSearchBarFunction" description="Verify Search Function Of Discount Coupon" finished-at="2026-01-30T18:36:30 IST" duration-ms="1084" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (82, 309). Other element would receive the click: <div data-state="open" data-slot="sheet-overlay" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-40 bg-black/50" data-aria-hidden="true" aria-hidden="true" style="pointer-events: auto;"></div>
+  (Session info: chrome=143.0.7499.192)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-139-generic', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33aa270996d0d49b2ae266eacdd0d5d2, clickElement {id=f.8042CD0270E0F37AE0C1D8140989E3CA.d.173D59A2506471096DC302ED1DDBEFAD.e.26}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.192, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41697}, goog:processID: 30824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41697/devtoo..., se:cdpVersion: 143.0.7499.192, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (33aa270996d0d49b2ae266eacdd0d5d2)] -> xpath: //span[text()='Settings']]
+Session ID: 33aa270996d0d49b2ae266eacdd0d5d2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (82, 309). Other element would receive the click: <div data-state="open" data-slot="sheet-overlay" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-40 bg-black/50" data-aria-hidden="true" aria-hidden="true" style="pointer-events: auto;"></div>
+  (Session info: chrome=143.0.7499.192)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-139-generic', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33aa270996d0d49b2ae266eacdd0d5d2, clickElement {id=f.8042CD0270E0F37AE0C1D8140989E3CA.d.173D59A2506471096DC302ED1DDBEFAD.e.26}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.192, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41697}, goog:processID: 30824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41697/devtoo..., se:cdpVersion: 143.0.7499.192, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (33aa270996d0d49b2ae266eacdd0d5d2)] -> xpath: //span[text()='Settings']]
+Session ID: 33aa270996d0d49b2ae266eacdd0d5d2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at commonPages.SidePage.openDiscountCoupon(SidePage.java:120)
+at settings.DiscountCouponTest.verifyTheSearchBarFunction(DiscountCouponTest.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTheChatFunctonality -->
-      </class> <!-- settings.CustomerSupportTest -->
+        </test-method> <!-- verifyTheSearchBarFunction -->
+      </class> <!-- settings.DiscountCouponTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

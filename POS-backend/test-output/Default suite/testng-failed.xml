@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="settings.DeliveryPartnerTest">
+      <class name="settings.DiscountCouponTest">
         <methods>
-          <include name="viewDeliveryPartner"/>
+          <include name="verifyAddDiscountCouponFunction"/>
           <include name="setup"/>
+          <include name="verifyTheSearchBarFunction"/>
         </methods>
-      </class> <!-- settings.DeliveryPartnerTest -->
+      </class> <!-- settings.DiscountCouponTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

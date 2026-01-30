@@ -13,7 +13,7 @@ import commonPages.SidePage;
 @Listeners(ExtentTestListener.class)
 public class CustomerSupportTest extends BaseTest{
 	
-	@Test(priority = 1)
+	@Test(priority = 1,description  = "Verify the Customer Support Page Navigation")
 	public void openCustomerSupportPage()
 	{
 		ExtentTest test= ExtentTestListener.getTest();
@@ -33,7 +33,7 @@ public class CustomerSupportTest extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2,description  = "Check The Search Functionality of Customer Support")
 	public void checkTheSearchFunctonality()
 	{
 		ExtentTest test= ExtentTestListener.getTest();
@@ -54,7 +54,7 @@ public class CustomerSupportTest extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3, description  = "Check The Chat Functionality of Customer Support")
 	public void checkTheChatFunctonality()
 	{
 		ExtentTest test= ExtentTestListener.getTest();
